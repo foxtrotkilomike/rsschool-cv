@@ -1,7 +1,6 @@
 # rsschool-cv
 
 ## Philipp Khromov
----
 
 ### Contacts
 
