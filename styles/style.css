@@ -10,7 +10,7 @@ body {
   width: var(--body-width);
   height: calc(var(--body-width) * 1.4142);
   margin: 20px auto;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
   font-family: "Poppins", sans-serif;
 }
@@ -46,6 +46,15 @@ body {
   font-weight: 200;
 }
 
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  font-size: 12px;
+}
+
 /* -------------MAIN----------------- */
 .main-container {
   display: flex;
@@ -53,7 +62,58 @@ body {
 }
 
 aside {
+  display: flex;
+  flex-direction: column;
   width: var(--left-column-width);
+  flex-shrink: 0;
+}
+
+aside > section {
+  padding: 0 20px 40px 20px;
+}
+
+aside ul {
+  list-style: none;
+}
+
+.discord::before {
+  content: url("../images/discord_icon.png");
+  vertical-align: top;
+}
+
+.telegram::before {
+  content: url("../images/telegram_icon.png");
+  vertical-align: top;
+}
+
+.vk::before {
+  content: url("../images/vk_icon.png");
+  vertical-align: top;
+}
+
+.mail::before {
+  content: url("../images/mail_icon.png");
+  vertical-align: top;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-shrink: 1;
+}
+
+main > section {
+  /* padding: 0 20px 40px 20px; */
+}
+
+main ul {
+  list-style-position: inside;
+  list-style-type: "\27AE";
+}
+
+.code__section-content {
+  background-color: #888;
 }
 
 /* -------------FOOTER----------------- */
