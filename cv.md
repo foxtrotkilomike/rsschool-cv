@@ -11,20 +11,21 @@
 
 ### About
 
-> A student of [BMSTU](https://www.bmstu.ru/), based in Moscow. 
+> A student of [BMSTU](https://www.bmstu.ru/), based in Moscow.
 > Core interests: web technologies, UX/UI and computer science.
 > Currently taking part in Javascript/Front-end course at [RS School](https://rs.school/).
 > Aiming to gain practice in industry-relevant web technologies and collect experience from school's mentors to become a junior front-end developer.
 
 ### Skills
 
-* HTML, CSS
-* Javascript (basic level)
-* C/C++ (basic level)
-* Git
-* Matlab & Simulink
+- HTML, CSS
+- Javascript (basic level)
+- C/C++ (basic level)
+- Git
+- Matlab & Simulink
 
 ### Code samples
+
 ```
 function add(a, b){
   return a + b;
