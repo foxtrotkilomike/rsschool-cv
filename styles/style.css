@@ -4,6 +4,7 @@
 
 body {
   --body-width: 850px;
+  --left-column-width: 350px;
   display: flex;
   flex-direction: column;
   width: var(--body-width);
@@ -22,7 +23,7 @@ body {
 }
 .photo-container {
   display: flex;
-  width: 250px;
+  width: 310px;
   padding: 20px;
   justify-content: center;
 }
@@ -32,19 +33,27 @@ body {
 
 .header__text-box {
   align-self: flex-start;
+  line-height: 2em;
 }
 .header__full-name {
   width: 200px;
   margin-top: 40px;
 }
 .header__name {
+  font-weight: 400;
 }
 .subheader {
+  font-weight: 200;
 }
 
 /* -------------MAIN----------------- */
 .main-container {
+  display: flex;
   flex-grow: 1;
+}
+
+aside {
+  width: var(--left-column-width);
 }
 
 /* -------------FOOTER----------------- */
