@@ -2,8 +2,8 @@
 
 Watch the deployed version ↡↡↡
 
-https://foxtrotkilomike.gitaghub.io/rsschool-cv/
+https://foxtrotkilomike.github.io/rsschool-cv/
 
 cv.md ↡↡↡
 
-https://foxtrotkilomike.gitaghub.io/rsschool-cv/CV
+https://foxtrotkilomike.github.io/rsschool-cv/cv
