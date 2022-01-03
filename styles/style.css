@@ -16,6 +16,7 @@ body {
 }
 
 a {
+  color: rgb(126, 126, 126);
   text-decoration-style: dotted;
 }
 
@@ -23,11 +24,13 @@ a {
   from {
     color: #000;
     opacity: 1;
+    transform: translate(0, 0);
   }
   to {
     color: red;
     font-size: 300%;
     opacity: 0;
+    transform: translate(-60px, -30px);
   }
 }
 
@@ -65,6 +68,7 @@ a {
 nav ul li {
   list-style: none;
   display: inline-block;
+  color: rgb(126, 126, 126);
 }
 
 nav ul li a {
@@ -88,8 +92,8 @@ aside {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  background-color: rgb(228, 183, 147);
-  border-radius: 5px;
+  background-color: rgb(236, 205, 179);
+  border-radius: 8px;
 }
 
 aside > section {
@@ -132,41 +136,41 @@ main {
   flex-shrink: 1;
 }
 
-main > section {
-  /* padding: 0 20px 40px 20px; */
-}
-
 main ul {
   list-style-position: inside;
   list-style-type: "\27AE";
 }
 
 pre {
-  background-color: rgb(228, 183, 147);
+  background-color: rgb(236, 205, 179);
   border-radius: 8px;
-  margin: 0 20px 0 10px;
+  margin: 70px 20px 0 10px;
 }
 
 .section-title {
+  position: absolute;
   text-shadow: 3px 3px 3px #ccc;
 }
 
-/* .contacts__section-title:target,
-.about-me__section-title:target {
-  transition: color .5s;
-  color: red;
-} */
-
 .contacts__section-title:target,
-.about-me__section-title:target {
-  animation: .5s title-boom;
+.about-me__section-title:target,
+.skills__section-title:target,
+.code__section-title:target,
+.experience__section-title:target,
+.education__section-title:target,
+.english-level__section-title:target {
+  animation: .8s ease-out title-boom;
 }
 
 .section-content {
-  margin-left: 10px;
-  margin-right: 20px;
+  margin: 70px 20px 0 10px;
   text-align: justify;
 }
+
+section p:not(:nth-child(3)) {
+  margin-top: 10px;
+}
+
 /* -------------FOOTER----------------- */
 
 footer {
