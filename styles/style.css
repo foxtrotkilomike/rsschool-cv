@@ -171,4 +171,23 @@ pre {
 
 footer {
   flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  background-color:rgb(233, 232, 232);
+}
+
+footer div:last-child {
+  flex-basis: 145px;
+}
+
+.footer-block {
+  padding: 0 20px;
+}
+
+.footer-block img{
+  display: block;
+  height: 25px;
+  margin: 0 auto;
 }
