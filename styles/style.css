@@ -4,7 +4,7 @@
 
 body {
   --body-width: 850px;
-  --left-column-width: 350px;
+  --left-column-width: 310px;
   display: flex;
   flex-direction: column;
   width: var(--body-width);
@@ -13,6 +13,22 @@ body {
   border: 1px solid #ccc;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
   font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration-style: dotted;
+}
+
+@keyframes title-boom {
+  from {
+    color: #000;
+    opacity: 1;
+  }
+  to {
+    color: red;
+    font-size: 300%;
+    opacity: 0;
+  }
 }
 
 /* -------------HEADER----------------- */
@@ -61,11 +77,19 @@ nav ul li a {
   flex-grow: 1;
 }
 
+.aside-wrapper {
+  width: var(--left-column-width);
+  flex-shrink: 0;
+  padding: 20px;
+  padding-top: 60px;
+}
+
 aside {
   display: flex;
   flex-direction: column;
-  width: var(--left-column-width);
-  flex-shrink: 0;
+  box-sizing: border-box;
+  background-color: rgb(228, 183, 147);
+  border-radius: 5px;
 }
 
 aside > section {
@@ -74,6 +98,11 @@ aside > section {
 
 aside ul {
   list-style: none;
+}
+
+li span {
+  position: relative;
+  left: 10px;
 }
 
 .discord::before {
@@ -112,10 +141,32 @@ main ul {
   list-style-type: "\27AE";
 }
 
-.code__section-content {
-  background-color: #888;
+pre {
+  background-color: rgb(228, 183, 147);
+  border-radius: 8px;
+  margin: 0 20px 0 10px;
 }
 
+.section-title {
+  text-shadow: 3px 3px 3px #ccc;
+}
+
+/* .contacts__section-title:target,
+.about-me__section-title:target {
+  transition: color .5s;
+  color: red;
+} */
+
+.contacts__section-title:target,
+.about-me__section-title:target {
+  animation: .5s title-boom;
+}
+
+.section-content {
+  margin-left: 10px;
+  margin-right: 20px;
+  text-align: justify;
+}
 /* -------------FOOTER----------------- */
 
 footer {
