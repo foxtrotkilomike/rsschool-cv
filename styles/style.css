@@ -16,7 +16,7 @@ body {
 }
 
 a {
-  color: rgb(126, 126, 126);
+  color: rgb(104, 104, 104);
   text-decoration-style: dotted;
 }
 
@@ -30,7 +30,7 @@ a {
     color: red;
     font-size: 300%;
     opacity: 0;
-    transform: translate(-60px, -30px);
+    transform: translate(-60px, -20px);
   }
 }
 
@@ -71,7 +71,7 @@ nav ul li {
   color: rgb(126, 126, 126);
 }
 
-nav ul li a {
+nav ul li {
   font-size: 12px;
 }
 
@@ -97,16 +97,18 @@ aside {
 }
 
 aside > section {
-  padding: 0 20px 40px 20px;
+  padding: 20px 20px 40px 20px;
 }
 
 aside ul {
   list-style: none;
 }
 
-li span {
+aside li a {
   position: relative;
   left: 10px;
+  color: #000;
+  text-decoration-style: solid;
 }
 
 .discord::before {
@@ -129,10 +131,26 @@ li span {
   vertical-align: top;
 }
 
+.about-me__section-content:nth-of-type(2) {
+  font-weight: bold;
+}
+
+.core-interests-list {
+  position: relative;
+  left: 15px;
+  list-style-position: inside;
+  list-style-type: "\27AE";
+}
+
+.core-interests-list li span {
+  position: relative;
+  left: 15px;
+}
+
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-shrink: 1;
 }
 
@@ -141,15 +159,21 @@ main ul {
   list-style-type: "\27AE";
 }
 
+main ul li span {
+  position: relative;
+  left: 15px;
+}
+
 pre {
-  background-color: rgb(236, 205, 179);
+  background-color: rgb(230, 230, 230);
   border-radius: 8px;
-  margin: 70px 20px 0 10px;
+  margin: 50px 20px 0 10px;
 }
 
 .section-title {
   position: absolute;
   text-shadow: 3px 3px 3px #ccc;
+  margin-top: 0;
 }
 
 .contacts__section-title:target,
@@ -163,7 +187,7 @@ pre {
 }
 
 .section-content {
-  margin: 70px 20px 0 10px;
+  margin: 50px 20px 0 10px;
   text-align: justify;
 }
 
