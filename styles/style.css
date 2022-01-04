@@ -200,7 +200,7 @@ main .section-title {
   position: absolute;
   text-shadow: 3px 3px 3px #ecd4c3;
   margin-top: 0;
-  min-width: 200px;
+  min-width: 400px;
 }
 
 .contacts__section-title:target,
