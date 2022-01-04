@@ -22,27 +22,39 @@
       <nav>
         <ul>
           <li><a href="#contacts">Contacts</a> |</li>
-          <li><a href="#about">About me</a> |</li>
+          <li><a href="#about">About</a> |</li>
           <li><a href="#skills">Skills</a> |</li>
           <li><a href="#code">Code</a> |</li>
           <li><a href="#experience">Experience</a> |</li>
           <li><a href="#education">Education</a> |</li>
-          <li><a href="#english">English level</a></li>
+          <li><a href="#english">English</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <div class="main-container">
-    <div class="aside-wrapper">
-      <aside>
+    <aside>
+      <div class="aside-wrapper">
         <section class="contacts">
           <h2 class="contacts__section-title section-title" id="contacts">Contact me!</h2>
           <h2 class="section-title">Contact me!</h2>
           <ul class="contacts__section-content section-content">
-            <li class="discord"><a href="https://discordapp.com/users/613482030101168163/">Philipp (@foxtrotkilomike)</a></li>
-            <li class="telegram"><a href="https://t.me/foxkilomike/">@foxkilomike</a></li>
-            <li class="vk"><a href="https://vk.com/airplanesspot/">@airplanesspot</a></li>
-            <li class="mail"><a href="mailto:filooloog@mail.ru">filooloog@mail.ru</a></li>
+            <li class="discord">
+              <div class="contacts__section-container">
+                <a href="https://discordapp.com/users/613482030101168163/">Philipp (@foxtrotkilomike)</a>
+              </div></li>
+            <li class="telegram">
+              <div class="contacts__section-container">
+                <a href="https://t.me/foxkilomike/">@foxkilomike</a>
+              </div></li>
+            <li class="vk">
+              <div class="contacts__section-container">
+                <a href="https://vk.com/airplanesspot/">@airplanesspot</a>
+              </div></li>
+            <li class="mail">
+              <div class="contacts__section-container">
+                <a href="mailto:filooloog@mail.ru">filooloog@mail.ru</a>
+              </div></li>
           </ul>
         </section>
         <section class="about-me">
@@ -57,49 +69,52 @@
           </ul> 
           <p class="about-me__section-content section-content">Currently taking part in <i>Javascript/Front-end</i> course at <a href="https://rs.school/">RS School</a>. Aiming to gain practice in industry-relevant web technologies and collect experience from school’s mentors to become a junior front-end developer.</p>
         </section>
-      </aside>
-    </div>
+      </div>
+    </aside>
+    
     <main>
-      <section class="skills">
-        <h2 class="skills__section-title section-title" id="skills">Skills</h2>
-        <h2 class="section-title">Skills</h2>
-        <ul class="skills__section-content section-content">
-          <li><span>HTML, CSS</span></li>
-          <li><span>Javascript (basic level)</span></li>
-          <li><span>C/C++ (basic level)</span></li>
-          <li><span>Git</span></li>
-          <li><span>Matlab & Simulink</span></li>
-        </ul>
-      </section>
-      <section class="code">
-        <h2 class="code__section-title section-title" id="code">Code sample</h2>
-        <h2 class="section-title">Code sample</h2>
-        <pre><code class="code__section-content section-content">
+      <div class="main-wrapper">
+        <section class="main-section skills">
+          <h2 class="skills__section-title section-title" id="skills">Skills</h2>
+          <h2 class="section-title">Skills</h2>
+          <ul class="skills__section-content section-content">
+            <li><span>HTML, CSS</span></li>
+            <li><span>Javascript (basic level)</span></li>
+            <li><span>C/C++ (basic level)</span></li>
+            <li><span>Git</span></li>
+            <li><span>Matlab & Simulink</span></li>
+          </ul>
+        </section>
+        <section class="main-section code">
+          <h2 class="code__section-title section-title" id="code">Code sample</h2>
+          <h2 class="section-title">Code sample</h2>
+          <pre><code class="code__section-content section-content">
     function add(a, b) {
       return a + b;
     }
 
     console.log( add(5, 5) )
-        </code></pre>
-      </section>
-      <section class="experience">
-        <h2 class="experience__section-title section-title" id="experience">Experience</h2>
-        <h2 class="section-title">Experience</h2>
-        <p class="experience__section-content section-content">My first project is <a href="https://foxtrotkilomike.github.io/rsschool-cv/">my CV</a></p>
-        <p class="experience__section-content section-content">Also one-semester project at <a href="https://park.vk.company/">Technopark</a> - a C++ based game using <a href="https://www.sfml-dev.org/">SFML</a> (unfortunately, repo is gone...)</p>
-      </section>
-      <section class="education">
-        <h2 class="education__section-title section-title" id="education">Education</h2>
-        <h2 class="section-title">Education</h2>
-        <p class="education__section-content section-content"><b>2016 - now:</b> department of Computer Science, artificial intelligence and control systems, Bauman Moscow State
-          Technical University</p>
-        <p class="education__section-content section-content">For specialist's degree in control systems</p>
-      </section>
-      <section class="english-level">
-        <h2 class="english-level__section-title section-title" id="english">English level</h2>
-        <h2 class="section-title">English level</h2>
-        <p class="english-level__section-content section-content"><b>B1</b> - for writing and listening<br> <b>A2</b> - for speaking</p>
-      </section>
+          </code></pre>
+        </section>
+        <section class="main-section experience">
+          <h2 class="experience__section-title section-title" id="experience">Experience</h2>
+          <h2 class="section-title">Experience</h2>
+          <p class="experience__section-content section-content">My first project is <a href="https://foxtrotkilomike.github.io/rsschool-cv/">my CV</a></p>
+          <p class="experience__section-content section-content">Also one-semester project at <a href="https://park.vk.company/">Technopark</a> - a C++ based game using <a href="https://www.sfml-dev.org/">SFML</a> (unfortunately, repo is gone...)</p>
+        </section>
+        <section class="main-section education">
+          <h2 class="education__section-title section-title" id="education">Education</h2>
+          <h2 class="section-title">Education</h2>
+          <p class="education__section-content section-content"><b>2016 - now:</b> department of Computer Science, artificial intelligence and control systems, Bauman Moscow State
+            Technical University</p>
+          <p class="education__section-content section-content">For specialist's degree in control systems</p>
+        </section>
+        <section class="main-section english-level">
+          <h2 class="english-level__section-title section-title" id="english">English level</h2>
+          <h2 class="section-title">English level</h2>
+          <p class="english-level__section-content section-content"><b>B1</b> - for writing and listening<br> <b>A2</b> - for speaking</p>
+        </section>
+      </div>
     </main>
   </div>
   <footer>
