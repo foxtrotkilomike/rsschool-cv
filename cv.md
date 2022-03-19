@@ -4,7 +4,7 @@
 
 ### Contacts
 
-- Discord: [Philipp (@foxtrotkilomike)](Филипп#0879)
+- Discord: Philipp (@foxtrotkilomike)
 - VK: [@foxkilomike](https://vk.com/foxkilomike "Got something to say?")
 - E-mail: filooloog@mail.ru
 - Tel.: +7-900-155-10-95
