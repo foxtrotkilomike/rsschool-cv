@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" type="image/x-icon" href="images/cv.png">
+  <title>CV - Philipp Khromov</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="photo-container">
+      <img class="main-photo" src="pictures/avatar.png" alt="Philipp Khromov" title="It's me!">
+    </div>
+    <div class="header__text-box">
+      <h1 class="header__full-name">Khromov <span class="header__name">Philipp</span></h1>
+      <h2 class="subheader">Front-end trainee</h2>
+      <nav>
+        <ul>
+          <li><a href="#contacts">Contacts</a> |</li>
+          <li><a href="#about">About</a> |</li>
+          <li><a href="#skills">Skills</a> |</li>
+          <li><a href="#code">Code</a> |</li>
+          <li><a href="#experience">Experience</a> |</li>
+          <li><a href="#education">Education</a> |</li>
+          <li><a href="#english">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="main-container">
+    <aside>
+      <div class="aside-wrapper">
+        <section class="contacts">
+          <h2 class="contacts__section-title section-title" id="contacts">Contact me!</h2>
+          <h2 class="section-title">Contact me!</h2>
+          <ul class="contacts__section-content section-content">
+            <li class="discord">
+              <div class="contacts__section-container">
+                <a href="https://discordapp.com/users/613482030101168163/">Philipp (@foxtrotkilomike)</a>
+              </div></li>
+            <li class="telegram">
+              <div class="contacts__section-container">
+                <a href="https://t.me/foxkilomike/">@foxkilomike</a>
+              </div></li>
+            <li class="vk">
+              <div class="contacts__section-container">
+                <a href="https://vk.com/airplanesspot/">@airplanesspot</a>
+              </div></li>
+            <li class="mail">
+              <div class="contacts__section-container">
+                <a href="mailto:filooloog@mail.ru">filooloog@mail.ru</a>
+              </div></li>
+          </ul>
+        </section>
+        <section class="about-me">
+          <h2 class="about-me__section-title section-title" id="about">Who am I?</h2>
+          <h2 class="section-title">Who am I?</h2>
+          <p class="about-me__section-content section-content">A student of <a href="https://www.bmstu.ru/">BMSTU</a>, based in Moscow.</p>
+          <p class="about-me__section-content section-content">Core interests:</p>
+          <ul class="core-interests-list">
+            <li><span>web technologies</span></li>
+            <li><span>UX/UI</span></li>
+            <li><span>computer science</span></li>
+          </ul> 
+          <p class="about-me__section-content section-content">Currently taking part in <i>Javascript/Front-end</i> course at <a href="https://rs.school/">RS School</a>. Aiming to gain practice in industry-relevant web technologies and collect experience from school’s mentors to become a junior front-end developer.</p>
+        </section>
+      </div>
+    </aside>
+    
+    <main>
+      <div class="main-wrapper">
+        <section class="main-section skills">
+          <h2 class="skills__section-title section-title" id="skills">Skills</h2>
+          <h2 class="section-title">Skills</h2>
+          <ul class="skills__section-content section-content">
+            <li><span>HTML, CSS</span></li>
+            <li><span>Javascript (basic level)</span></li>
+            <li><span>C/C++ (basic level)</span></li>
+            <li><span>Git</span></li>
+            <li><span>Matlab & Simulink</span></li>
+          </ul>
+        </section>
+        <section class="main-section code">
+          <h2 class="code__section-title section-title" id="code">Code sample</h2>
+          <h2 class="section-title">Code sample</h2>
+          <pre><code class="code__section-content section-content">
+    function add(a, b) {
+      return a + b;
+    }
+
+    console.log( add(5, 5) )
+          </code></pre>
+        </section>
+        <section class="main-section experience">
+          <h2 class="experience__section-title section-title" id="experience">Experience</h2>
+          <h2 class="section-title">Experience</h2>
+          <p class="experience__section-content section-content">My first project is <a href="https://foxtrotkilomike.github.io/rsschool-cv/">my CV</a></p>
+          <p class="experience__section-content section-content">Also one-semester project at <a href="https://park.vk.company/">Technopark</a> - a C++ based game using <a href="https://www.sfml-dev.org/">SFML</a> (unfortunately, repo is gone...)</p>
+        </section>
+        <section class="main-section education">
+          <h2 class="education__section-title section-title" id="education">Education</h2>
+          <h2 class="section-title">Education</h2>
+          <p class="education__section-content section-content"><b>2016 - now:</b> department of Computer Science, artificial intelligence and control systems, Bauman Moscow State
+            Technical University</p>
+          <p class="education__section-content section-content">For specialist's degree in control systems</p>
+        </section>
+        <section class="main-section english-level">
+          <h2 class="english-level__section-title section-title" id="english">English level</h2>
+          <h2 class="section-title">English level</h2>
+          <p class="english-level__section-content section-content"><b>B1</b> - for writing and listening<br> <b>A2</b> - for speaking</p>
+        </section>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <div class="footer-block">Check my <a href="https://github.com/foxtrotkilomike">GitHub</a>!</div>
+    <div class="footer-block"><i>2022</i></div>
+    <div class="footer-block">
+      <a href="https://rs.school/js/" title="RS School cource «JavaScript/Front-end»">
+        <img src="images/rs_school_js.svg" alt="Rolling Scopes school logo">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>

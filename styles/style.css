@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  --body-width: 850px;
+  --left-column-width: 310px;
+  display: flex;
+  flex-direction: column;
+  width: var(--body-width);
+  height: calc(var(--body-width) * 1.4142);
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  font-family: "Poppins", sans-serif;
+  overflow-y: scroll;
+}
+
+a {
+  color: #686868;
+  text-decoration-style: dotted;
+}
+
+aside a {
+  color: #3d3d3d;
+}
+
+@keyframes title-boom {
+  from {
+    color: #000;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  to {
+    color: red;
+    font-size: 300%;
+    opacity: 0;
+    transform: translate(-60px, -20px);
+  }
+}
+
+/* -------------HEADER----------------- */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.photo-container {
+  display: flex;
+  width: 310px;
+  padding: 20px;
+  justify-content: center;
+}
+.main-photo {
+  width: 200px;
+}
+
+.header__text-box {
+  align-self: flex-start;
+  line-height: 2em;
+  width: 57%;
+}
+.header__full-name {
+  width: 200px;
+  margin-top: 40px;
+}
+.header__name {
+  font-weight: 400;
+}
+.subheader {
+  font-weight: 200;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  color: #7e7e7e;
+}
+
+nav ul li {
+  font-size: 14px;
+}
+
+/* -------------MAIN----------------- */
+.main-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+aside {
+  display: inline-block;
+  width: var(--left-column-width);
+  padding: 20px;
+  padding-top: 60px;
+}
+
+.aside-wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #ECCAB1;
+  border-radius: 8px;
+}
+
+.aside-wrapper > section {
+  padding: 20px 20px 40px 20px;
+}
+
+.contacts__section-content {
+  list-style: none;
+}
+
+.aside-wrapper li a {
+  position: relative;
+  left: 10px;
+  color: #000;
+  text-decoration-style: solid;
+}
+
+.contacts__section-container {
+  display: inline-block;
+  vertical-align: 40%;
+}
+
+.discord::before {
+  content: url("../images/discord_icon.png");
+}
+
+.telegram::before {
+  content: url("../images/telegram_icon.png");
+}
+
+.vk::before {
+  content: url("../images/vk_icon.png");
+}
+
+.mail::before {
+  content: url("../images/mail_icon.png");
+}
+
+.about-me__section-content:nth-of-type(2) {
+  font-weight: bold;
+}
+
+.core-interests-list {
+  position: relative;
+  left: 15px;
+  list-style: inside "\27AE";
+} 
+
+.core-interests-list li span {
+  position: relative;
+  left: 15px;
+}
+
+main {
+  display: inline-block;
+  width: 57%;
+  height: 100%;
+  padding: 20px 30px 0 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-wrapper ul {
+  list-style-position: inside;
+  list-style-type: "\27AE";
+}
+
+.main-wrapper ul li span {
+  position: relative;
+  left: 15px;
+}
+
+pre {
+  background-color: rgb(230, 230, 230);
+  border-radius: 8px;
+  margin: 50px 20px 0 10px;
+}
+
+aside .section-title {
+  position: absolute;
+  text-shadow: 3px 3px 3px #ccc;
+  margin-top: 0;
+}
+
+main .section-title {
+  position: absolute;
+  text-shadow: 3px 3px 3px #ecd4c3;
+  margin-top: 0;
+  min-width: 400px;
+}
+
+.contacts__section-title:target,
+.about-me__section-title:target,
+.skills__section-title:target,
+.code__section-title:target,
+.experience__section-title:target,
+.education__section-title:target,
+.english-level__section-title:target {
+  animation: .8s ease-out title-boom;
+}
+
+.main-section {
+  margin-bottom: 25px;
+}
+
+.section-content {
+  margin: 50px 10px 0 10px;
+  text-align: justify;
+}
+
+section p:not(:nth-child(3)) {
+  margin-top: 10px;
+}
+
+/* -------------FOOTER----------------- */
+
+footer {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  background-color:rgb(233, 232, 232);
+}
+
+footer div:last-child {
+  flex-basis: 145px;
+}
+
+.footer-block {
+  padding: 0 20px;
+}
+
+.footer-block img{
+  display: block;
+  height: 25px;
+  margin: 0 auto;
+}
